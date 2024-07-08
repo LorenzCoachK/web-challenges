@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <h1>Create yout Personal Profile</h1>
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <form>
+        <p>
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset aria-describedby="Personal Information">
+          <legend>Personal Information</legend>
+          <label for="first name">First Name:</label>
+          <input id="input-first-name" type="text" required />
+          <label for="last Name">Last Name:</label>
+          <input id="input-last-name" type="text" required />
+          <label for="birthday">Your Birthday</label>
+          <input id="birthday" type="date" />
+        </fieldset>
+        <p>
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset aria-describedby="Further Information">
+          <legend>Further Information</legend>
+          <label for="favourite Color">Favorite Colour:</label>
+          <input type="color" id="favorite-color" />
+          <label for="favorite pet">What´s your favourite pet?</label>
+          <select id="favorite pet" required>
+            <option value="">--Please choose an option--</option>
+            <option value="agraCadabra">agra cadabra</option>
+            <option value="Chickenturtle">Chicken Turtle</option>
+            <option value="FriedEggJellyfish">Fried Egg Jelly Fish</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+      <script>
+        // Setze den Standardwert für das Farbauswahl-Input-Feld
+        document.getElementById("favorite-color").value = "#E5430F";
+      </script>
+    </section>
+  </body>
+</html>
