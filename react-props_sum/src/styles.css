@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+}
+
+.sum-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sum-box {
+  background-color: lightblue;
+  border: 2px solid darkblue;
+  padding: 1rem;
+  width: 100px;
+  text-align: center;
+}
